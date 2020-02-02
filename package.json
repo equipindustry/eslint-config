@@ -1,0 +1,48 @@
+{
+  "name": "@equipindustry/eslint-config",
+  "description": "Shared ESLint config for Equipindustry projects",
+  "version": "0.0.0-DEVELOPMENT",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/equipindustry/eslint-config.git"
+  },
+  "files": [
+    ".eslintrc.js"
+  ],
+  "main": ".eslintrc.js",
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "prettier": "prettier '**/*.{js?(on),ts?(x),scss,md,yml}' --write --list-different",
+    "prettier-check": "npm run prettier -- --write=false"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^3.0.9",
+    "prettier": "^1.19.1",
+    "semantic-release": "^15.13.30"
+  },
+  "dependencies": {
+    "@equipindustry/prettierrc": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-ban": "^1.3.0",
+    "eslint-plugin-etc": "^0.0.1-beta.24",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsdoc": "^19.2.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  }
+}
