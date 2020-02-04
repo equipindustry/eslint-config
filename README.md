@@ -6,7 +6,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-Shared ESLint config for Sourcegraph projects
+Shared ESLint config for EquipIndustry projects
 
 ## Install
 
@@ -58,7 +58,7 @@ When not to use `eslint-disable`: If you disagree with a rule (think a rule is m
 
 This ruleset replaces almost all of our TSLint config, however there is a handful of rules that have no equivalent in ESLint yet.
 For these, it is recommended to run TSLint in addition to ESLint.
-The package dist-tag `@sourcegraph/tslint-config@eslint` contains only the TSLint rules that are not yet in this ESLint config.
+The package dist-tag `@equipindustry/tslint-config@eslint` contains only the TSLint rules that are not yet in this ESLint config.
 
 ## Release
 
