@@ -1,4 +1,4 @@
-const prettierrc = require('@sourcegraph/prettierrc')
+const prettierrc = require('@equipindustry/prettierrc')
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -199,7 +199,11 @@ module.exports = {
         '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/explicit-function-return-type': [
           'error',
-          { allowExpressions: true, allowTypedFunctionExpressions: true, allowHigherOrderFunctions: true },
+          {
+            allowExpressions: true,
+            allowTypedFunctionExpressions: true,
+            allowHigherOrderFunctions: true,
+          },
         ],
         '@typescript-eslint/explicit-member-accessibility': ['error', { overrides: { constructors: 'no-public' } }],
         '@typescript-eslint/indent': 'off',
