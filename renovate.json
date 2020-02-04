@@ -1,5 +1,0 @@
-{
-  "extends": ["github>sourcegraph/renovate-config"],
-  "semanticCommits": true,
-  "reviewers": ["team:web"]
-}
