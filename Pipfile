@@ -30,6 +30,9 @@ doc8 = "*"
 
 [scripts]
 test = "pytest"
+"release:minor" = "bumpversion minor"
+"release:major" = "bumpversion major"
+"release:fix" = "bumpversion fix"
 
 [requires]
 python_version = "3.8.0"

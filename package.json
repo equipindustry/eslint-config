@@ -1,14 +1,16 @@
 {
   "name": "@equipindustry/eslint-config",
   "description": "Shared ESLint config for Equipindustry projects",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/equipindustry/eslint-config.git"
+    "url": "git+htps://github.com/equipindustry/eslint-config.git"
   },
   "files": [
-    ".eslintrc.js"
+    ".eslintrc.js",
+    "eslint"
   ],
   "main": ".eslintrc.js",
   "scripts": {
@@ -29,21 +31,28 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@equipindustry/prettierrc": "^0.0.0",
+    "@equipindustry/prettierrc": "^0.1.0",
     "husky": "^4.2.1",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "semantic-release": "^17.0.2"
   },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/parser": "^2.18.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-ban": "^1.4.0",
     "eslint-plugin-etc": "^0.0.1-beta.24",
-    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsdoc": "^21.0.0",
-    "eslint-plugin-react": "^7.18.2",
+    "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0"
   }
 }
