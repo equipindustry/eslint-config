@@ -1,4 +1,4 @@
-const prettierrc = require('@equipindustry/prettierrc')
+const prettierrc = require('@equipindustry/prettierrc');
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -285,4 +285,4 @@ module.exports = {
       },
     },
   ],
-}
+};
