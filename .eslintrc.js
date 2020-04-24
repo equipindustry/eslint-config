@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   env: {
     browser: true,
@@ -38,6 +36,45 @@ module.exports = {
     'import/namespace': 'off',
     'import/no-deprecated': 'off',
     'import/no-unresolved': 'off',
+    '@typescript-eslint/interface-name-prefix': 0,
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'default',
+        format: ['camelCase', 'PascalCase'],
+        leadingUnderscore: 'forbid',
+      },
+      {
+        selector: 'class',
+        format: ['PascalCase'],
+      },
+      {
+        selector: 'property',
+        modifiers: ['readonly'],
+        format: ['camelCase', 'UPPER_CASE'],
+      },
+      {
+        selector: 'memberLike',
+        modifiers: ['protected'],
+        format: ['camelCase'],
+        leadingUnderscore: 'require',
+      },
+      {
+        selector: 'memberLike',
+        modifiers: ['private'],
+        format: ['camelCase'],
+        leadingUnderscore: 'require',
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
+      },
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
+        prefix: ['I'],
+      },
+    ],
   },
   settings: {
     react: {
