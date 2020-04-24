@@ -1,4 +1,4 @@
-const prettierrc = require('@equipindustry/prettierrc');
+const prettierrc = require('./prettier.config');
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -205,7 +205,10 @@ module.exports = {
             allowHigherOrderFunctions: true,
           },
         ],
-        '@typescript-eslint/explicit-member-accessibility': ['error', { overrides: { constructors: 'no-public' } }],
+        '@typescript-eslint/explicit-member-accessibility': [
+          'error',
+          { overrides: { constructors: 'no-public' } },
+        ],
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/member-delimiter-style': 'off',
