@@ -15,13 +15,12 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:promise/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:flowtype/recommended',
     'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     'plugin:jsx-a11y/recommended',
     'prettier',
     'prettier/@typescript-eslint',
   ],
-  plugins: ['flowtype', 'prettier', 'react-hooks', 'jsx-a11y'],
+  plugins: ['prettier', 'react-hooks', 'jsx-a11y'],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
