@@ -1,7 +1,7 @@
 {
   "name": "@equipindustry/eslint-config",
   "description": "Shared ESLint config for Equipindustry projects",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "license": "MIT",
   "repository": {
@@ -22,7 +22,7 @@
     "semantic-release": "semantic-release",
     "lint": "eslint -c ./.eslintrc.js ./ --ext .js,.jsx,.mjs,.d.ts,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
-    "prettier": "prettier '**/*.{js?(on),ts?(x),scss,md,yml}' --write=false --list-different",
+    "prettier": "prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml}' --write=false --list-different",
     "prettier:fix": "yarn prettier --write=true"
   },
   "commitlint": {
