@@ -32,6 +32,12 @@ module.exports = {
     'no-console': 0,
     semicolon: 0,
     'jsx-no-lambda': 0,
+    // import
+    'import/default': 'off',
+    'import/named': 'off',
+    'import/namespace': 'off',
+    'import/no-deprecated': 'off',
+    'import/no-unresolved': 'off',
   },
   settings: {
     react: {
