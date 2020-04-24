@@ -8,6 +8,11 @@
     "type": "git",
     "url": "git+htps://github.com/equipindustry/eslint-config.git"
   },
+  "keywords": [
+    "eslint",
+    "lint",
+    "formatting"
+  ],
   "files": [
     ".eslintrc.js",
     "eslint"
@@ -15,8 +20,8 @@
   "main": ".eslintrc.js",
   "scripts": {
     "semantic-release": "semantic-release",
-    "prettier": "prettier '**/*.{js?(on),ts?(x),scss,md,yml}' --write --list-different",
-    "prettier-check": "yarn prettier -- --write=false"
+    "prettier": "prettier '**/*.{js?(on),ts?(x),scss,md,yml}' --write=false --list-different",
+    "prettier:fix": "yarn prettier --write=true"
   },
   "commitlint": {
     "extends": [
@@ -31,28 +36,27 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@equipindustry/prettierrc": "^0.1.0",
-    "husky": "^4.2.1",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1",
-    "semantic-release": "^17.0.2"
+    "@equipindustry/prettierrc": "^0.2.0",
+    "husky": "^4.2.5",
+    "semantic-release": "^17.0.7"
   },
-  "dependencies": {},
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-ban": "^1.4.0",
+    "eslint-plugin-etc": "^0.0.1-beta.25",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsdoc": "^24.0.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0"
+  },
   "engines": {
     "node": ">=8"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.19.0",
-    "@typescript-eslint/parser": "^2.19.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-ban": "^1.4.0",
-    "eslint-plugin-etc": "^0.0.1-beta.24",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsdoc": "^21.0.0",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.3.0"
   }
 }
