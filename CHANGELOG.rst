@@ -8,6 +8,9 @@ This file uses change log convention from `keep a CHANGELOG`_.
 `Unreleased`_
 +++++++++++++
 
+`0.3.4`_ - 2020-04-27
+++++++++++++++++++++++
+
 `0.3.3`_ - 2020-04-27
 ++++++++++++++++++++++
 
@@ -26,7 +29,8 @@ This file uses change log convention from `keep a CHANGELOG`_.
 `0.1.0`_ - 2020-02-04
 ++++++++++++++++++++++
 
-.. _`Unreleased`: https://github.com/equipindustry/eslint-config/compare/0.3.3...HEAD
+.. _`Unreleased`: https://github.com/equipindustry/eslint-config/compare/0.3.4...HEAD
+.. _`0.3.4`: https://github.com/equipindustry/eslint-config/compare/0.3.3...0.3.4
 .. _`0.3.3`: https://github.com/equipindustry/eslint-config/compare/0.3.2...0.3.3
 .. _`0.3.2`: https://github.com/equipindustry/eslint-config/compare/0.3.1...0.3.2
 .. _`0.3.1`: https://github.com/equipindustry/eslint-config/compare/0.3.0...0.3.1
